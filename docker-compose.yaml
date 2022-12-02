@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  luigid:
+    image: bandoos/luigid:latest
+    ports:
+      - 8082:8082
+    volumes:
+      - "./etc/luigi:/etc/luigi/"
+      - "./luigi/state:/luigi/state/:rw"
+      - "./luigi/logs:/luigi/logs/:rw"

@@ -5,12 +5,12 @@
 
 FROM python:alpine
 
-MAINTAINER  Tim Birkett <tim@birkett-bros.com> (@pysysops)
+# MAINTAINER  Tim Birkett <tim@birkett-bros.com> (@pysysops)
 
 ARG user=app
 ARG group=app
-ARG uid=2101
-ARG gid=2101
+ARG uid=1000
+ARG gid=1000
 
 # The luigi app is run with user `app`, uid = 2101
 # If you bind mount a volume from the host or a data container,
